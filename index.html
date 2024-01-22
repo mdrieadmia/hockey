@@ -3,25 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Website Title -->
+    <!---- Website Title ---->
     <title>Hockey's</title>
-    <!-- Daisy UI CDN -->
+    <!---- Daisy UI CDN ---->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <!-- Tailwind CSS CDN -->
+    <!---- Tailwind CSS CDN ---->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Fontawesome CND -->
+    <!---- Fontawesome CND ---->
     <script src="https://kit.fontawesome.com/2c7411e5f0.js" crossorigin="anonymous"></script>
-    <!-- Google Font Links -->
+    <!---- Google Font Links ---->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <!-- Custom CSS -->
+    <!---- Custom CSS ---->
     <style>
         .font-manrope{
             font-family: 'Manrope', sans-serif;
         }
     </style>
-    <!-- Custom Tailwind Variables -->
+    <!---- Custom Tailwind Variables ---->
     <script>
         tailwind.config = {
           theme: {
@@ -40,10 +40,10 @@
 </head>
 <body class="font-manrope">
     <header>
-        <!-- Navbar Section -->
+        <!----- Navbar Section ----->
         <nav>
-            <div class="container lg:max-w-[1170px] mx-auto px-6 lg:px-0">
-                <div class="navbar bg-base-100">
+            <div class="container lg:max-w-[1170px] mx-auto px-6 my-12">
+                <div class="navbar p-0">
                     <div class="navbar-start">
                       <div class="dropdown">
                         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -57,7 +57,7 @@
                             <li><a class="hover:bg-transparent hover:text-brand-color font-bold text-base" href="#">Contact</a></li>
                         </ul>
                       </div>
-                      <a class="btn btn-ghost text-4xl text-dark-1 font-extrabold">Hockey<span class="text-brand-color -mx-2">’</span>s</a>
+                      <a class="text-4xl text-dark-1 font-extrabold">Hockey<span class="text-brand-color">’</span>s</a>
                     </div>
                     <div class="navbar-center hidden lg:flex">
                       <ul class="menu menu-horizontal px-1">
@@ -75,6 +75,72 @@
                   </div>
             </div>
         </nav>
+        <!----- Banner Section ----->
+        <section>
+            <div class="container lg:max-w-[1170px] mx-auto px-6 relative">
+                <!----- Slider Container ----->
+                <div class="carousel w-full relative">
+                    <!----- Slider One ----->
+                    <div id="slide1" class="carousel-item relative w-full">
+                      <img src="Images/banner1.png" class="w-full rounded-2xl" />
+                      <div class="absolute flex justify-center left-[50%] -translate-x-[50%] bottom-8 gap-4 lg:justify-start lg:left-8 lg:translate-x-0">
+                        <a href="#slide4" class="btn btn-circle bg-dark-1 border-0 text-white text-2xl hover:bg-brand-color"><i class="fa-solid fa-angle-left"></i></a> 
+                        <a href="#slide2" class="btn btn-circle bg-dark-1 border-0 text-white text-2xl hover:bg-brand-color"><i class="fa-solid fa-angle-right"></i></a>
+                      </div>
+                      <!----- Meet Card For Slide One ----->
+                      <div class="absolute hidden p-8 bg-dark-1 text-white rounded-2xl max-w-[560px] bottom-8 right-8 lg:block z-50">
+                        <h3 class="font-extrabold text-2xl">Meet all the heroes from the field</h3>
+                        <p class="font-medium text-base text-[#FFFFFF99] leading-7 mt-4">Gritty playground setting, hockey sticks clash, skillful moves unfold meeting with a passionate player.</p>
+                      </div>
+                    </div> 
+                    <!----- Slider Two ----->
+                    <div id="slide2" class="carousel-item relative w-full">
+                        <img src="Images/banner2.png" class="w-full rounded-2xl" />
+                        <div class="absolute flex justify-center left-[50%] -translate-x-[50%] bottom-8 gap-4 lg:justify-start lg:left-8 lg:translate-x-0">
+                          <a href="#slide1" class="btn btn-circle bg-dark-1 border-0 text-white text-2xl hover:bg-brand-color"><i class="fa-solid fa-angle-left"></i></a> 
+                          <a href="#slide3" class="btn btn-circle bg-dark-1 border-0 text-white text-2xl hover:bg-brand-color"><i class="fa-solid fa-angle-right"></i></a>
+                        </div>
+                        <!----- Meet Card For Slide Two ----->
+                        <div class="absolute hidden p-8 bg-dark-1 text-white rounded-2xl max-w-[560px] bottom-8 right-8 lg:block z-50">
+                          <h3 class="font-extrabold text-2xl">Meet all the heroes from the field</h3>
+                          <p class="font-medium text-base text-[#FFFFFF99] leading-7 mt-4">Gritty playground setting, hockey sticks clash, skillful moves unfold meeting with a passionate player.</p>
+                        </div>
+                    </div> 
+                    <!----- Slider Three ----->
+                    <div id="slide3" class="carousel-item relative w-full">
+                        <img src="Images/banner3.png" class="w-full rounded-2xl" />
+                        <div class="absolute flex justify-center left-[50%] -translate-x-[50%] bottom-8 gap-4 lg:justify-start lg:left-8 lg:translate-x-0">
+                          <a href="#slide2" class="btn btn-circle bg-dark-1 border-0 text-white text-2xl hover:bg-brand-color"><i class="fa-solid fa-angle-left"></i></a> 
+                          <a href="#slide4" class="btn btn-circle bg-dark-1 border-0 text-white text-2xl hover:bg-brand-color"><i class="fa-solid fa-angle-right"></i></a>
+                        </div>
+                        <!----- Meet Card For Slide Three ----->
+                        <div class="absolute hidden p-8 bg-dark-1 text-white rounded-2xl max-w-[560px] bottom-8 right-8 lg:block z-50">
+                            <h3 class="font-extrabold text-2xl">Meet all the heroes from the field</h3>
+                            <p class="font-medium text-base text-[#FFFFFF99] leading-7 mt-4">Gritty playground setting, hockey sticks clash, skillful moves unfold meeting with a passionate player.</p>
+                        </div>
+                    </div> 
+                    <!----- Slider Four ----->
+                    <div id="slide4" class="carousel-item relative w-full">
+                        <img src="Images/banner4.png" class="w-full rounded-2xl" />
+                        <div class="absolute flex justify-center left-[50%] -translate-x-[50%] bottom-8 gap-4 lg:justify-start lg:left-8 lg:translate-x-0">
+                          <a href="#slide3" class="btn btn-circle bg-dark-1 border-0 text-white text-2xl hover:bg-brand-color"><i class="fa-solid fa-angle-left"></i></a> 
+                          <a href="#slide1" class="btn btn-circle bg-dark-1 border-0 text-white text-2xl hover:bg-brand-color"><i class="fa-solid fa-angle-right"></i></a>
+                        </div>
+                        <!----- Meet Card For Slide Four ----->
+                        <div class="absolute hidden p-8 bg-dark-1 text-white rounded-2xl max-w-[560px] bottom-8 right-8 lg:block z-50">
+                            <h3 class="font-extrabold text-2xl">Meet all the heroes from the field</h3>
+                            <p class="font-medium text-base text-[#FFFFFF99] leading-7 mt-4">Gritty playground setting, hockey sticks clash, skillful moves unfold meeting with a passionate player.</p>
+                        </div>
+                    </div> 
+                </div>
+                <!----- Meet Card For SM & MD Device ----->
+                <div class="absolute p-8 bg-dark-1 text-white rounded-2xl max-w-full mr-6 mt-4 lg:hidden">
+                    <h3 class="font-extrabold text-lg md:text-xl">Meet all the heroes from the field</h3>
+                    <p class="font-medium text-sm text-[#FFFFFF99] leading-7 mt-4">Gritty playground setting, hockey sticks clash, skillful moves unfold meeting with a passionate player.</p>
+                </div>
+            </div>
+        </section>
+        <!----- Banner Section ----->
     </header>
     <main>
 
