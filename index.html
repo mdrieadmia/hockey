@@ -3,7 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Website Title -->
     <title>Hockey's</title>
+    <!-- Daisy UI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        .font-manrope{
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+    <!-- Custom Tailwind Variables -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                'brand-color ': '#FF4240',
+                'dark-1':'#131318',
+                'dark-2':'#0D0D1299',
+                'dark-3':'#0D0D1280',
+                'dark-4':'#0D0D124D',
+              }
+            }
+          }
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -13,7 +44,7 @@
 
     </main>
     <footer>
-        
+
     </footer>
 </body>
 </html>
